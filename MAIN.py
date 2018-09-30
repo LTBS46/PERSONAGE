@@ -57,7 +57,7 @@ class monperso:
         self.HACHE2M = A.HACHE2M
         self.HACHE2M.OK = classe.HACHE2M and race.HACHE2M
         self.MARTEAU1M = A.MARTEAU1M
-        self.MARTEAU1M.OK= classe.MARTEAU1M and race.MARTEAU1M
+        self.MARTEAU1M.OK = classe.MARTEAU1M and race.MARTEAU1M
         self.MARTEAU2M = A.MARTEAU2M
         self.MARTEAU2M.OK = classe.MARTEAU2M and race.MARTEAU2M
         self.LANCE = A.LANCE
@@ -83,13 +83,13 @@ class monperso:
                         self.ARC,
                         self.ARBALLETTE
                         }
-        to_print = "Arme ? : "
+        self.to_print = "Arme ? : "
         self.listdisp = {}
         for i in self.tt_arme:
             if i.OK:
                 self.listdisp += i
-                to_print += i.ARME + ", "
-        print(to_print)
+                self.to_print += i.ARME + ", "
+        print(self.to_print)
         self.OK1 = False
         while not self.OK1:
             for a in self.listdisp:
@@ -107,7 +107,7 @@ class monperso:
             if i.MAINS:
                 self.listdisp -= i
         for i in self.listdisp:
-            to_print += i.ARME + ", "
+            self.to_print += i.ARME + ", "
         self.OK2 = False
         if not self.dualhanded:
             while not self.OK2:
@@ -122,6 +122,9 @@ class monperso:
                     print("huh?")
         else:
             self.ARME2 = OTH.EMPTYHAND
+        self.DEG = 0
+        self.e_a = {self.ARME1, self.ARME2}
+        self.LDEG = 4
 
     def recalculer(self):
         self.PVMAX = self.CLASSE.PV * self.RACE.PV
@@ -168,32 +171,32 @@ class monperso:
     def present(self):
         print("|--------------------------------------|")
         if self.SUB == "nul":
-            to_print = "|Classe : " + self.CLASSE.CLASSE
+            self.to_print = "|Classe : " + self.CLASSE.CLASSE
             if not self.CLASSE.CLASSE == "Chevalier":
                 if (self.CLASSE.CLASSE == "Rodeur") or (self.CLASSE.CLASSE == "Prêtre"):
-                    to_print = to_print + "   "
+                    self.to_print = self.to_print + "   "
                 elif (self.CLASSE.CLASSE == "Paladin") or (self.CLASSE.CLASSE == "Sorcier"):
-                    to_print = to_print + "  "
+                    self.to_print = self.to_print + "  "
                 else:
-                    to_print = to_print + " "
-            to_print = to_print + "      "
+                    self.to_print = self.to_print + " "
+            self.to_print = self.to_print + "      "
         else:
             if self.SUB.TYPE == "OMNI":
-                to_print = "|Classe : " + self.CLASSE.CLASSE + " de " + self.SUB.TYPE
-                to_print = to_print + "  "
+                self.to_print = "|Classe : " + self.CLASSE.CLASSE + " de " + self.SUB.TYPE
+                self.to_print = self.to_print + "  "
             else:
-                to_print = "|Classe : " + self.CLASSE.CLASSE + " de " + self.SUB.TYPE
-                to_print = to_print + "   "
+                self.to_print = "|Classe : " + self.CLASSE.CLASSE + " de " + self.SUB.TYPE
+                self.to_print = self.to_print + "   "
         if not self.RACE.RACE == "Mi-nain":
             if (self.RACE.RACE == "Ork") or (self.RACE.RACE == "Elf"):
-                to_print = to_print + "    "
+                self.to_print = self.to_print + "    "
             elif self.RACE.RACE == "Nain":
-                to_print = to_print + "   "
+                self.to_print = self.to_print + "   "
             else:
-                to_print = to_print + " "
-        to_print = to_print + "Race : " + self.RACE.RACE + "|"
-        print(to_print)
-        to_print = "|Niv : " + str(int(self.LVL))
+                self.to_print = self.to_print + " "
+        self.to_print = self.to_print + "Race : " + self.RACE.RACE + "|"
+        print(self.to_print)
+        self.to_print = "|Niv : " + str(int(self.LVL))
         space = 7
         if not int(self.LVL) >= 100:
             space += 1
@@ -211,147 +214,147 @@ class monperso:
         i = 0
         if float.is_integer(space_at_time):
             while not i == int(space_at_time):
-                to_print = to_print + " "
+                self.to_print = self.to_print + " "
                 i += 1
         else:
             while not i == int(space_at_time + 1):
-                to_print = to_print + " "
+                self.to_print = self.to_print + " "
                 i += 1
-        to_print = to_print + "PV : " + str(int(self.PV)) + "/" + str(int(self.PVMAX))
+        self.to_print = self.to_print + "PV : " + str(int(self.PV)) + "/" + str(int(self.PVMAX))
         i = 0
         while not i == int(space_at_time):
-            to_print = to_print + " "
+            self.to_print = self.to_print + " "
             i += 1
-        to_print += "MANA : " + str(int(self.MANA)) + "/" + str(int(self.MANAMAX)) + "|"
-        print(to_print)
-        to_print = "|XP : " + str(float.__round__(float(self.xp), 2)) + "/" + str(float.__round__(self.xp_need, 0))
+        self.to_print += "MANA : " + str(int(self.MANA)) + "/" + str(int(self.MANAMAX)) + "|"
+        print(self.to_print)
+        self.to_print = "|XP : " + str(float.__round__(float(self.xp), 2)) + "/" + str(float.__round__(self.xp_need, 0))
         i = 5
         while not self.xp >= math.pow(10, i):
             if i == 0:
                 i = -2
             else:
-                to_print += " "
+                self.to_print += " "
             i -= 1
         i = 5
         while not self.xp >= math.pow(10, i):
             if i == 0:
                 i = 0
             else:
-                to_print += " "
+                self.to_print += " "
             i -= 1
-        to_print += "|"
-        print(to_print)
+        self.to_print += "|"
+        print(self.to_print)
         print("|--------------------------------------|")
         print("|Attributs :                           |")
-        to_print = "|FOR : "
-        to_print += str(self.ATTFOR)
+        self.to_print = "|FOR : "
+        self.to_print += str(self.ATTFOR)
         if self.ATTFOR < 10:
-            to_print += " "
-        to_print += " MOD : "
-        to_print += str(self.MODFOR)
-        to_print += "      END : "
-        to_print += str(self.ATTEND)
+            self.to_print += " "
+        self.to_print += " MOD : "
+        self.to_print += str(self.MODFOR)
+        self.to_print += "      END : "
+        self.to_print += str(self.ATTEND)
         if self.ATTEND < 10:
-            to_print += " "
-        to_print += " MOD : "
-        to_print += str(self.MODEND)
-        to_print += "|"
-        print(to_print)
-        to_print = "|DEX : "
-        to_print += str(self.ATTDEX)
+            self.to_print += " "
+        self.to_print += " MOD : "
+        self.to_print += str(self.MODEND)
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|DEX : "
+        self.to_print += str(self.ATTDEX)
         if self.ATTDEX < 10:
-            to_print += " "
-        to_print += " MOD : "
-        to_print += str(self.MODDEX)
-        to_print += "      PER : "
-        to_print += str(self.ATTPER)
+            self.to_print += " "
+        self.to_print += " MOD : "
+        self.to_print += str(self.MODDEX)
+        self.to_print += "      PER : "
+        self.to_print += str(self.ATTPER)
         if self.ATTPER < 10:
-            to_print += " "
-        to_print += " MOD : "
-        to_print += str(self.MODPER)
-        to_print += "|"
-        print(to_print)
-        to_print = "|SAG : "
-        to_print += str(self.ATTSAG)
+            self.to_print += " "
+        self.to_print += " MOD : "
+        self.to_print += str(self.MODPER)
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|SAG : "
+        self.to_print += str(self.ATTSAG)
         if self.ATTSAG < 10:
-            to_print += " "
-        to_print += " MOD : "
-        to_print += str(self.MODSAG)
-        to_print += "                      |"
-        print(to_print)
+            self.to_print += " "
+        self.to_print += " MOD : "
+        self.to_print += str(self.MODSAG)
+        self.to_print += "                      |"
+        print(self.to_print)
         print("|--------------------------------------|")
-        to_print = "|Epée à 1 main : "
+        self.to_print = "|Epée à 1 main : "
         if self.EPEE1M:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "   Arballette : "
+            self.to_print += "NON"
+        self.to_print += "   Arballette : "
         if self.ARBALLETTE:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "|"
-        print(to_print)
-        to_print = "|Epée à 2 mains : "
+            self.to_print += "NON"
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|Epée à 2 mains : "
         if self.EPEE2M:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "    Bouclier : "
+            self.to_print += "NON"
+        self.to_print += "    Bouclier : "
         if self.BOUCLIER:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "|"
-        print(to_print)
-        to_print = "|Hache à 1 main : "
+            self.to_print += "NON"
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|Hache à 1 main : "
         if self.HACHE1M:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "       Dague : "
+            self.to_print += "NON"
+        self.to_print += "       Dague : "
         if self.DAGUE:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "|"
-        print(to_print)
-        to_print = "|Hache à 2 mains : "
+            self.to_print += "NON"
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|Hache à 2 mains : "
         if self.HACHE2M:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "      Baton : "
+            self.to_print += "NON"
+        self.to_print += "      Baton : "
         if self.BATON:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "|"
-        print(to_print)
-        to_print = "|Marteau à 1 main : "
+            self.to_print += "NON"
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|Marteau à 1 main : "
         if self.MARTEAU1M:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "       Arc : "
+            self.to_print += "NON"
+        self.to_print += "       Arc : "
         if self.ARC:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "|"
-        print(to_print)
-        to_print = "|Marteau à 2 mains : "
+            self.to_print += "NON"
+        self.to_print += "|"
+        print(self.to_print)
+        self.to_print = "|Marteau à 2 mains : "
         if self.MARTEAU2M:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "    Lance : "
+            self.to_print += "NON"
+        self.to_print += "    Lance : "
         if self.LANCE:
-            to_print += "OUI"
+            self.to_print += "OUI"
         else:
-            to_print += "NON"
-        to_print += "|"
-        print(to_print)
+            self.to_print += "NON"
+        self.to_print += "|"
+        print(self.to_print)
         print("|--------------------------------------|")
 
     def take_damage(self, damage):
@@ -388,15 +391,13 @@ class monperso:
 
     def attack(self):
         self.DEG = 0
-        self.LDEG = 4
-        for i in self.ARME1.DEG:
-            self.DEG += rng.randrange(1, self.LDEG) * i
-            self.LDEG += 2
-        self.LDEG = 4
-        for i in self.ARME2.DEG:
-            self.DEG += rng.randrange(1, self.LDEG) * i
-            self.LDEG += 2
+        for e in self.e_a:
+            self.LDEG = 4
+            for i in e.DEG:
+                self.DEG += rng.randrange(1, self.LDEG) * i
+                self.LDEG += 2
         mob.take_damage(self.DEG)
+
 
 class MOB:
     def __init__(self):

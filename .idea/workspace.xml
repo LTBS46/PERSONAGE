@@ -17,8 +17,9 @@
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.83" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,12 +34,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="13435" />
+          <entry key="py" value="13550" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="13435" />
+          <entry key="Python" value="13550" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -52,15 +53,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MAIN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="542" lean-forward="true" selection-start-line="542" selection-end-line="542" />
+            <state relative-caret-position="460">
+              <caret line="550" lean-forward="true" selection-start-line="550" selection-end-line="550" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#14433#15420#0" />
-                <marker date="1538210490992" expanded="true" signature="12850:12854" ph="..." />
-                <marker date="1538210490992" expanded="true" signature="12889:12893" ph="..." />
-                <marker date="1538210490992" expanded="true" signature="13487:13496" ph="..." />
-                <marker date="1538210490992" expanded="true" signature="14010:14015" ph="..." />
+                <marker date="1538295912160" expanded="true" signature="13553:13557" ph="..." />
+                <marker date="1538295912160" expanded="true" signature="13592:13596" ph="..." />
+                <marker date="1538295912160" expanded="true" signature="14190:14199" ph="..." />
+                <marker date="1538295912160" expanded="true" signature="14610:14615" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/OTH.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <marker date="1538209905787" expanded="true" signature="15:16" ph="..." />
                 <marker date="1538209905787" expanded="true" signature="195:200" ph="..." />
@@ -82,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ARME.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
+            <state relative-caret-position="17">
               <caret line="91" selection-start-line="91" selection-end-line="96" selection-end-column="23" />
               <folding>
                 <marker date="1538158846195" expanded="true" signature="13:18" ph="..." />
@@ -102,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M_TYPE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="561">
               <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RACE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="3825">
               <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
             </state>
           </provider>
@@ -120,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CLASSE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
+            <state relative-caret-position="4267">
               <caret line="251" column="12" selection-start-line="251" selection-start-column="12" selection-end-line="251" selection-end-column="12" />
             </state>
           </provider>
@@ -140,16 +140,19 @@
       <find>MON_PERSO</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Console_gest.py" />
         <option value="$PROJECT_DIR$/ARME.py" />
         <option value="$PROJECT_DIR$/OTH.py" />
-        <option value="$PROJECT_DIR$/MAIN.py" />
         <option value="$PROJECT_DIR$/M_TYPE.py" />
         <option value="$PROJECT_DIR$/RACE.py" />
         <option value="$PROJECT_DIR$/CLASSE.py" />
+        <option value="$PROJECT_DIR$/MAIN.py" />
       </list>
     </option>
   </component>
@@ -191,12 +194,12 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,10 +211,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="PERSONAGE" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="PERSONAGE" />
+      </console-settings>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -297,8 +309,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.24330357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.24330357" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -310,7 +323,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -344,10 +357,31 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Console_gest.py" />
+    <entry file="file://$PROJECT_DIR$/M_TYPE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RACE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLASSE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4267">
+          <caret line="251" column="12" selection-start-line="251" selection-start-column="12" selection-end-line="251" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OTH.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <marker date="1538209905787" expanded="true" signature="15:16" ph="..." />
             <marker date="1538209905787" expanded="true" signature="195:200" ph="..." />
@@ -357,7 +391,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ARME.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
+        <state relative-caret-position="17">
           <caret line="91" selection-start-line="91" selection-end-line="96" selection-end-column="23" />
           <folding>
             <marker date="1538158846195" expanded="true" signature="13:18" ph="..." />
@@ -373,38 +407,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M_TYPE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RACE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLASSE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="251" column="12" selection-start-line="251" selection-start-column="12" selection-end-line="251" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MAIN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="542" lean-forward="true" selection-start-line="542" selection-end-line="542" />
+        <state relative-caret-position="460">
+          <caret line="550" lean-forward="true" selection-start-line="550" selection-end-line="550" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#14433#15420#0" />
-            <marker date="1538210490992" expanded="true" signature="12850:12854" ph="..." />
-            <marker date="1538210490992" expanded="true" signature="12889:12893" ph="..." />
-            <marker date="1538210490992" expanded="true" signature="13487:13496" ph="..." />
-            <marker date="1538210490992" expanded="true" signature="14010:14015" ph="..." />
+            <marker date="1538295912160" expanded="true" signature="13553:13557" ph="..." />
+            <marker date="1538295912160" expanded="true" signature="13592:13596" ph="..." />
+            <marker date="1538295912160" expanded="true" signature="14190:14199" ph="..." />
+            <marker date="1538295912160" expanded="true" signature="14610:14615" ph="..." />
           </folding>
         </state>
       </provider>
