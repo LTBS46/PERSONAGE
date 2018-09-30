@@ -34,3 +34,17 @@ def you_lose():
     print("you_lose")
     MAIN.PJ.present()
     exit()
+
+
+def autoturn(yours):
+    if yours:
+        list_to_use = MAIN.ally_list
+    else:
+        list_to_use = MAIN.mob_list
+    for i in list_to_use:
+        i
+    if yours:
+        MAIN.ally_list = MAIN.new_list
+    else:
+        MAIN.mob_list = MAIN.new_list
+    MAIN.new_list = {}

@@ -53,6 +53,8 @@ class COMPAGNON:
     def __init__(self):
         self.NAME = "Drain de vie"
         self.TYPE = "ACTIF"
+        MAIN.new_list.attack()
 
     def attack(self):
         MAIN.mob.take_damage(MAIN.PJ.LVL*3)
+        MAIN.new_list += self.attack()

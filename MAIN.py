@@ -52,12 +52,16 @@ while not OK2:
     if not OK2:
         print("huh?")
 print("OK")
+ally_list = {}
+mob_list = {}
+new_list = {}
 PJ = P.monperso(classe, race, sub)
 PJ.present()
 mob = MOB.MOB()
 Turn = 0
 your_turn = True
 mob.new()
+auto_turn = OTH.autoturn()
 while True:
     if PJ.PV <= 0:
         OTH.you_lose()
@@ -68,4 +72,5 @@ while True:
         Int_main.interpret(input())
     else:
         mob.attack()
+        auto_turn(False)
         your_turn = True
