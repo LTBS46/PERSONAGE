@@ -12,7 +12,7 @@
     <session id="-789657658">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="3" />
@@ -34,12 +34,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="13550" />
+          <entry key="py" value="13919" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="13550" />
+          <entry key="Python" value="13919" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -53,14 +53,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MAIN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="550" lean-forward="true" selection-start-line="550" selection-end-line="550" />
+            <state relative-caret-position="209">
+              <caret line="456" lean-forward="true" selection-start-line="456" selection-end-line="456" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1538295912160" expanded="true" signature="13553:13557" ph="..." />
-                <marker date="1538295912160" expanded="true" signature="13592:13596" ph="..." />
-                <marker date="1538295912160" expanded="true" signature="14190:14199" ph="..." />
-                <marker date="1538295912160" expanded="true" signature="14610:14615" ph="..." />
+                <marker date="1538299218326" expanded="true" signature="13553:13557" ph="..." />
+                <marker date="1538299218326" expanded="true" signature="13592:13596" ph="..." />
+                <marker date="1538299218326" expanded="true" signature="14190:14199" ph="..." />
+                <marker date="1538299218326" expanded="true" signature="14610:14615" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,10 +70,10 @@
         <entry file="file://$PROJECT_DIR$/OTH.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <marker date="1538209905787" expanded="true" signature="15:16" ph="..." />
-                <marker date="1538209905787" expanded="true" signature="195:200" ph="..." />
+                <marker date="1538299220718" expanded="true" signature="15:16" ph="..." />
+                <marker date="1538299220718" expanded="true" signature="195:200" ph="..." />
               </folding>
             </state>
           </provider>
@@ -82,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ARME.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="91" selection-start-line="91" selection-end-line="96" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <marker date="1538158846195" expanded="true" signature="13:18" ph="..." />
                 <marker date="1538158846195" expanded="true" signature="563:733" ph="..." />
@@ -102,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M_TYPE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="528">
               <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
             </state>
           </provider>
@@ -110,18 +110,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RACE.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3825">
-              <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CLASSE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4267">
-              <caret line="251" column="12" selection-start-line="251" selection-start-column="12" selection-end-line="251" selection-end-column="12" />
+            <state relative-caret-position="358">
+              <caret line="247" column="12" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -148,10 +144,10 @@
       <list>
         <option value="$PROJECT_DIR$/Console_gest.py" />
         <option value="$PROJECT_DIR$/ARME.py" />
-        <option value="$PROJECT_DIR$/OTH.py" />
         <option value="$PROJECT_DIR$/M_TYPE.py" />
         <option value="$PROJECT_DIR$/RACE.py" />
         <option value="$PROJECT_DIR$/CLASSE.py" />
+        <option value="$PROJECT_DIR$/OTH.py" />
         <option value="$PROJECT_DIR$/MAIN.py" />
       </list>
     </option>
@@ -215,7 +211,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -286,7 +282,7 @@
     </list>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\zyvvo\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -309,7 +305,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -357,42 +352,27 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Console_gest.py" />
-    <entry file="file://$PROJECT_DIR$/M_TYPE.py">
+    <entry file="file://$PROJECT_DIR$/CLASSE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="358">
+          <caret line="247" column="12" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RACE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLASSE.py">
+    <entry file="file://$PROJECT_DIR$/M_TYPE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4267">
-          <caret line="251" column="12" selection-start-line="251" selection-start-column="12" selection-end-line="251" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OTH.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1538209905787" expanded="true" signature="15:16" ph="..." />
-            <marker date="1538209905787" expanded="true" signature="195:200" ph="..." />
-          </folding>
+        <state relative-caret-position="528">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ARME.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="91" selection-start-line="91" selection-end-line="96" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <marker date="1538158846195" expanded="true" signature="13:18" ph="..." />
             <marker date="1538158846195" expanded="true" signature="563:733" ph="..." />
@@ -407,16 +387,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OTH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1538299220718" expanded="true" signature="15:16" ph="..." />
+            <marker date="1538299220718" expanded="true" signature="195:200" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MAIN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="550" lean-forward="true" selection-start-line="550" selection-end-line="550" />
+        <state relative-caret-position="209">
+          <caret line="456" lean-forward="true" selection-start-line="456" selection-end-line="456" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1538295912160" expanded="true" signature="13553:13557" ph="..." />
-            <marker date="1538295912160" expanded="true" signature="13592:13596" ph="..." />
-            <marker date="1538295912160" expanded="true" signature="14190:14199" ph="..." />
-            <marker date="1538295912160" expanded="true" signature="14610:14615" ph="..." />
+            <marker date="1538299218326" expanded="true" signature="13553:13557" ph="..." />
+            <marker date="1538299218326" expanded="true" signature="13592:13596" ph="..." />
+            <marker date="1538299218326" expanded="true" signature="14190:14199" ph="..." />
+            <marker date="1538299218326" expanded="true" signature="14610:14615" ph="..." />
           </folding>
         </state>
       </provider>

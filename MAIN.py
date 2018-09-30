@@ -102,7 +102,7 @@ class monperso:
                     break
             if not self.OK1:
                 print("huh?")
-        self.listdisp += OTH.BOULCIER
+        self.listdisp += OTH.BOUCLIER
         for i in self.listdisp:
             if i.MAINS:
                 self.listdisp -= i
@@ -440,11 +440,11 @@ def interpret(r_input):
         PJ.attack()
         Your_turn = False
     elif str.startswith(r_input, "take_a "):
-        i_max = int(str.strip(r_input, "take_a "))
-        i = 0
-        while i <= i_max:
+        g_max = int(str.strip(r_input, "take_a "))
+        g = 0
+        while g <= g_max:
             mob.attack()
-            i += 1
+            g += 1
     else:
         print("huh?")
 
@@ -456,79 +456,48 @@ def you_lose():
 
 
 OK1 = False
-print("Classe ? : PALADIN, GUERRIER, CHASSEUR, RODEUR, PRETRE, SORCIER, MAGE, CHEVALIER")
+to_print = "Classe ? : "
+for i in C.liststr:
+    to_print += i + ", "
+print(to_print)
 while not OK1:
-    sub = "nul"
-    R1 = str(input())
-    if R1 == "PALADIN":
-        classe = C.PALADIN()
-        OK1 = True
-    elif R1 == "GUERRIER":
-        classe = C.GUERRIER()
-        OK1 = True
-    elif R1 == "CHASSEUR":
-        classe = C.CHASSEUR()
-        OK1 = True
-    elif R1 == "RODEUR":
-        classe = C.RODEUR()
-        OK1 = True
-    elif R1 == "PRETRE":
-        classe = C.PRETRE()
-        OK1 = True
-    elif R1 == "SORCIER":
-        classe = C.SORCIER()
-        OK1 = True
-    elif R1 == "MAGE":
-        classe = C.MAGE()
-        print("OK")
-        to_print = "Type ? : "
-        for s in M.liststr:
-            to_print += s + ", "
-        print(to_print)
-        while not OK1:
-            for f in M.listfunc:
-                R2 = str(input())
-                if R2 == str(f.TYPE):
-                    OK1 = True
-                    sub = f
-                    break
-            if not OK1:
-                print("huh?")
-    elif R1 == "CHEVALIER":
-        classe = C.CHEVALIER()
-        OK1 = True
-    else:
+    sub = OTH.nomag
+    for i in C.listfunc:
+        R1 = str(input())
+        if R1 == i.CLASSE:
+            classe = i
+            OK1 = True
+            break
+    if not OK1:
         print("huh?")
 print("OK")
+if classe.CLASSE == "MAGE":
+    to_print = "Type ? : "
+    for s in M.liststr:
+        to_print += s + ", "
+    print(to_print)
+    while not OK1:
+        for f in M.listfunc:
+            R2 = str(input())
+            if R2 == str(f.TYPE):
+                OK1 = True
+                sub = f
+                break
+        if not OK1:
+            print("huh?")
 to_print = "Race ? : "
 for s in R.liststr:
     to_print += s + ", "
 print(to_print)
 OK2 = False
 while not OK2:
-    R3 = str(input())
-    if R3 == "HUMAIN":
-        race = R.HUMAIN()
-        OK2 = True
-    elif R3 == "NAIN":
-        race = R.NAIN()
-        OK2 = True
-    elif R3 == "ELF":
-        race = R.ELF()
-        OK2 = True
-    elif R3 == "ORK":
-        race = R.ORK()
-        OK2 = True
-    elif R3 == "MI_ELF":
-        race = R.MI_ELF()
-        OK2 = True
-    elif R3 == "MI_ORK":
-        race = R.MI_ORK()
-        OK2 = True
-    elif R3 == "MI_NAIN":
-        race = R.MI_NAIN()
-        OK2 = True
-    else:
+    for i in R.listfunc:
+        R3 = str(input())
+        if R3 == i.RACE:
+            race = i
+            OK2 = True
+            break
+    if not OK2:
         print("huh?")
 print("OK")
 PJ = monperso(classe, race, sub)

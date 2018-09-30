@@ -1,4 +1,4 @@
-class BOULCIER:
+class BOUCLIER:
     def __init__(self):
         self.ARME = "Bouclier"
         self.DEG = {0, 0, 0}
@@ -14,3 +14,9 @@ class EMPTYHAND:
         self.MAINS = False
         self.MAGIC = False
         self.OK = False
+
+
+class nomag:
+    def __init__(self):
+        self.TYPE = "nul"
+        self.MANA = 1
