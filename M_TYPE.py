@@ -22,6 +22,12 @@ class OMNI:
         self.MANA = 1.3
 
 
+class nomag:
+    def __init__(self):
+        self.TYPE = "nul"
+        self.MANA = 1
+
+
 liststr = {"AIR",
            "EAU",
            "FEU",

@@ -1,3 +1,6 @@
+import COMP
+
+
 class CHASSEUR:
     def __init__(self):
         self.CLASSE = "Chasseur"
@@ -26,6 +29,10 @@ class CHASSEUR:
         self.MODSAG = 2
         self.ATTPER = 7
         self.MODPER = 3
+        self.COMPBASE1 = COMP.COMPAGNON()
+        self.COMPBASE2 = COMP.CONNAISSANCEDEFORET()
+        self.COMPBASE3 = COMP.ESQUIVE()
+        self.COMPBASE4 = COMP.POISON()
 
 
 class CHEVALIER:
@@ -56,6 +63,10 @@ class CHEVALIER:
         self.MODSAG = 1
         self.ATTPER = 5
         self.MODPER = 2
+        self.COMPBASE1 = COMP.CHEVAL()
+        self.COMPBASE2 = COMP.PEAUDURE()
+        self.COMPBASE3 = COMP.ESQUIVE()
+        self.COMPBASE4 = COMP.PLUSGROSPLUSBIEN()
 
 
 class GUERRIER:
@@ -86,6 +97,10 @@ class GUERRIER:
         self.MODSAG = 1
         self.ATTPER = 5
         self.MODPER = 2
+        self.COMPBASE1 = COMP.PEAUDURE()
+        self.COMPBASE2 = COMP.HEAVYSLASH()
+        self.COMPBASE3 = COMP.ESQUIVE()
+        self.COMPBASE4 = COMP.MINIMUMFOR()
 
 
 class MAGE:
@@ -116,6 +131,10 @@ class MAGE:
         self.MODSAG = 3
         self.ATTPER = 7
         self.MODPER = 3
+        self.COMPBASE1 = COMP.BOULEDENERGIE()
+        self.COMPBASE2 = COMP.LANCEFLAMME()
+        self.COMPBASE3 = COMP.GEL()
+        self.COMPBASE4 = COMP.POISON()
 
 
 class PALADIN:
@@ -146,6 +165,10 @@ class PALADIN:
         self.MODSAG = 3
         self.ATTPER = 3
         self.MODPER = 1
+        self.COMPBASE1 = COMP.SOIN()
+        self.COMPBASE2 = COMP.PEAUDURE()
+        self.COMPBASE3 = COMP.CHEVAL()
+        self.COMPBASE4 = COMP.PLUSDARMURE()
 
 
 class PRETRE:
@@ -176,6 +199,10 @@ class PRETRE:
         self.MODSAG = 4
         self.ATTPER = 8
         self.MODPER = 3
+        self.COMPBASE1 = COMP.SOIN()
+        self.COMPBASE2 = COMP.BUFFATK()
+        self.COMPBASE3 = COMP.BUFFDEF()
+        self.COMPBASE4 = COMP.CURE()
 
 
 class RODEUR:
@@ -206,6 +233,10 @@ class RODEUR:
         self.MODSAG = 1
         self.ATTPER = 8
         self.MODPER = 3
+        self.COMPBASE1 = COMP.POISON()
+        self.COMPBASE2 = COMP.CONNAISSANCEDEFORET()
+        self.COMPBASE3 = COMP.ESQUIVE()
+        self.COMPBASE4 = COMP.MINIMUMDEX()
 
 
 class SORCIER:
@@ -236,6 +267,10 @@ class SORCIER:
         self.MODSAG = 3
         self.ATTPER = 8
         self.MODPER = 3
+        self.COMPBASE1 = COMP.BOULEDENERGIE()
+        self.COMPBASE2 = COMP.DRAINPV()
+        self.COMPBASE3 = COMP.DRAINMANA()
+        self.COMPBASE4 = COMP.POISON()
 
 
 liststr = {"CHASSEUR",
