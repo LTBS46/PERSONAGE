@@ -1,6 +1,6 @@
 class EPEE1M:
     def __init__(self):
-        self.ARME = "Epée à 1 main"
+        self.NAME = "Epée à 1 main"
         self.DEG = {0, 1, 0}
         self.MAINS = False
         self.MAGIC = True
@@ -9,7 +9,7 @@ class EPEE1M:
 
 class EPEE2M:
     def __init__(self):
-        self.ARME = "Epée à 2 mains"
+        self.NAME = "Epée à 2 mains"
         self.DEG = {0, 0, 1}
         self.MAINS = True
         self.MAGIC = True
@@ -18,7 +18,7 @@ class EPEE2M:
 
 class HACHE1M:
     def __init__(self):
-        self.ARME = "Hache à 1 main"
+        self.NAME = "Hache à 1 main"
         self.DEG = {0, 1, 0}
         self.MAINS = False
         self.MAGIC = False
@@ -27,7 +27,7 @@ class HACHE1M:
 
 class HACHE2M:
     def __init__(self):
-        self.ARME = "Hache à 2 mains"
+        self.NAME = "Hache à 2 mains"
         self.DEG = {1, 1, 0}
         self.MAINS = True
         self.MAGIC = True
@@ -36,7 +36,7 @@ class HACHE2M:
 
 class MARTEAU2M:
     def __init__(self):
-        self.ARME = "Marteau à 2 mains"
+        self.NAME = "Marteau à 2 mains"
         self.DEG = {3, 0, 0}
         self.MAINS = True
         self.MAGIC = True
@@ -45,7 +45,7 @@ class MARTEAU2M:
 
 class MARTEAU1M:
     def __init__(self):
-        self.ARME = "Marteau à 1 main"
+        self.NAME = "Marteau à 1 main"
         self.DEG = {1, 0, 0}
         self.MAINS = False
         self.MAGIC = True
@@ -54,7 +54,7 @@ class MARTEAU1M:
 
 class LANCE:
     def __init__(self):
-        self.ARME = "Lance"
+        self.NAME = "Lance"
         self.DEG = {0, 0, 1}
         self.MAINS = True
         self.MAGIC = False
@@ -63,7 +63,7 @@ class LANCE:
 
 class DAGUE:
     def __init__(self):
-        self.ARME = "Dague"
+        self.NAME = "Dague"
         self.DEG = {1, 0, 0}
         self.MAINS = False
         self.MAGIC = False
@@ -72,7 +72,7 @@ class DAGUE:
 
 class ARC:
     def __init__(self):
-        self.ARME = "Arc"
+        self.NAME = "Arc"
         self.DEG = {0, 1, 0}
         self.MAINS = True
         self.MAGIC = False
@@ -81,7 +81,7 @@ class ARC:
 
 class BATON:
     def __init__(self):
-        self.ARME = "Baton"
+        self.NAME = "Baton"
         self.DEG = {1, 0, 0}
         self.MAINS = True
         self.MAGIC = True
@@ -90,7 +90,7 @@ class BATON:
 
 class ARBALLETTE:
     def __init__(self):
-        self.ARME = "Arballette"
+        self.NAME = "Arballette"
         self.DEG = {0, 0, 1}
         self.MAINS = True
         self.MAGIC = False

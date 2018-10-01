@@ -414,36 +414,40 @@ class monperso:
         self.listdisp = {}
         for i in self.tt_arme:
             if i.OK:
-                self.listdisp.__setitem__(-1, i)
-                self.to_print += i.ARME + ", "
+                self.listdisp.__setitem__(i, -1)
+                self.to_print += i.NAME + ", "
         print(self.to_print)
         self.OK1 = False
         while not self.OK1:
             self.R = input()
             for i in self.listdisp:
-                if self.R == i.ARME:
+                if self.R == i.NAME:
                     self.OK1 = True
                     self.ARME1 = i
                     self.dualhanded = self.ARME1.MAINS
-                    self.listdisp.__delitem__(a)
+                    self.listdisp.__delitem__(i)
+                    print("OK")
                     break
             if not self.OK1:
                 print("huh?")
-        self.listdisp += BOUCLIER
+        self.listdisp.__setitem__(BOUCLIER(),-1)
+        self.listtodel = {}
         for i in self.listdisp:
             if i.MAINS:
-                self.listdisp -= i
+                self.listtodel.__setitem__(i,-1)
+        for i in self.listtodel:
+            self.listdisp.__delitem__(i)
         for i in self.listdisp:
-            self.to_print += i.ARME + ", "
+            self.to_print += i.NAME + ", "
         self.OK2 = False
         if not self.dualhanded:
             while not self.OK2:
                 for a in self.listdisp:
                     self.R = str(input())
-                    if self.R == str(a.ARME):
+                    if self.R == str(a.NAME):
                         self.OK2 = True
                         self.ARME2 = a
-                        self.listdisp -= a
+                        self.listdisp.__delitem__(a)
                         break
                 if not self.OK2:
                     print("huh?")
@@ -490,7 +494,7 @@ def interpret(r_input,your_turn):
 
 class BOUCLIER:
     def __init__(self):
-        self.ARME = "Bouclier"
+        self.NAME = "Bouclier"
         self.DEG = {0, 0, 0}
         self.MAINS = False
         self.MAGIC = True
@@ -519,8 +523,8 @@ for i in CLASSE.liststr:
 print(to_print)
 while not OK1:
     sub = M.nomag()
+    R1 = str(input())
     for i in CLASSE.listfunc:
-        R1 = str(input())
         if R1 == i.CLASSE:
             classe = i
             OK1 = True
