@@ -5,6 +5,7 @@ import M_TYPE as M
 import math
 import ARME as A
 import random as rng
+import prefab as p
 
 
 class monperso:
@@ -15,6 +16,7 @@ class monperso:
         self.RACE = race
         self.SUB = sub
         self.LVL = 1
+        self.POS = p.vector2d(0, 0)
         self.calculEvery()
 
     def present(self):
