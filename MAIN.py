@@ -1,12 +1,13 @@
 import CLASSE
 import RACE as R
 import MOB
-import M_TYPE as M
+import MAGE_TYPE as M
 import math
 import ARME as A
 import random as rng
 import prefab as p
-
+vec1 = p.vector2d(2,3)
+vec1.add_lenght(3)
 
 class monperso:
     def __init__(self, classe, race, sub):
