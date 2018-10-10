@@ -1,10 +1,11 @@
-import COMP
+from BASE import COMP
+import prefab as p
 
 
 class CHASSEUR:
     def __init__(self):
         self.CLASSE = "Chasseur"
-        self.PV = 10
+        self.PV = p.f_afine(1, 10)
         self.MANA = 0.75
         self.ARMOR = "L"
         self.EPEE1M = True
@@ -38,7 +39,7 @@ class CHASSEUR:
 class CHEVALIER:
     def __init__(self):
         self.CLASSE = "Chevalier"
-        self.PV = 16
+        self.PV = p.f_afine(2, 16)
         self.MANA = 1
         self.ARMOR = "H"
         self.EPEE1M = True
@@ -72,7 +73,7 @@ class CHEVALIER:
 class GUERRIER:
     def __init__(self):
         self.CLASSE = "Guerrier"
-        self.PV = 12
+        self.PV = p.f_afine(2, 12)
         self.MANA = 0.5
         self.ARMOR = "H"
         self.EPEE1M = False
@@ -106,7 +107,7 @@ class GUERRIER:
 class MAGE:
     def __init__(self):
         self.CLASSE = "Mage"
-        self.PV = 7
+        self.PV = p.f_afine(1, 7)
         self.MANA = 1.75
         self.ARMOR = "C"
         self.EPEE1M = False
@@ -140,7 +141,7 @@ class MAGE:
 class PALADIN:
     def __init__(self):
         self.CLASSE = "Paladin"
-        self.PV = 15
+        self.PV = p.f_afine(3, 15)
         self.MANA = 1.5
         self.ARMOR = "H"
         self.EPEE1M = True
@@ -174,7 +175,7 @@ class PALADIN:
 class PRETRE:
     def __init__(self):
         self.CLASSE = "Prêtre"
-        self.PV = 7
+        self.PV = p.f_afine(1, 7)
         self.MANA = 1.6
         self.ARMOR = "C"
         self.EPEE1M = False
@@ -208,7 +209,7 @@ class PRETRE:
 class RODEUR:
     def __init__(self):
         self.CLASSE = "Rodeur"
-        self.PV = 12
+        self.PV = p.f_afine(2, 12)
         self.MANA = 0.6
         self.ARMOR = "L"
         self.EPEE1M = True
@@ -242,7 +243,7 @@ class RODEUR:
 class SORCIER:
     def __init__(self):
         self.CLASSE = "Sorcier"
-        self.PV = 7
+        self.PV = p.f_afine(1, 7)
         self.MANA = 1.6
         self.ARMOR = "L"
         self.EPEE1M = False

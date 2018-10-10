@@ -1,9 +1,6 @@
-import CLASSE
-import RACE as R
 import MOB
-import MAGE_TYPE as M
 import math
-import ARME as A
+from BASE import ARME as A, CLASSE, MAGE_TYPE as M, RACE as R
 import random as rng
 import prefab as p
 vec1 = p.vector2d(2,3)
@@ -263,7 +260,7 @@ class monperso:
         print("calcul des basique")
         self.xp_need = math.pow(self.LVL, 2)
         self.xp = 0
-        self.PVMAX = self.CLASSE.PV * self.RACE.PV
+        self.PVMAX = self.CLASSE.PV.f(self.LVL) * self.RACE.PV
         self.PV = self.PVMAX
 
     def calculComp(self):
