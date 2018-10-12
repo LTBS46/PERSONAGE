@@ -7,11 +7,16 @@ class temp:  # nul subclass for temporary value
 
 
 class vector2d:  # vector for 2d gestion of the position
-    def __init__(self, x, y):
-        # +y : right ; -y : left, writable
-        self.x = x
-        # +x : up ; -x : down, writable
-        self.y = y
+    def __init__(self, x = 0, y = 0, axis = None):
+        self.axis = axis
+        if self.axis == None:
+            # +y : right ; -y : left, writable
+            self.x = x
+            # +x : up ; -x : down, writable
+            self.y = y
+        else:
+            self.x = x * self.axis.axisx.x + self.axis.origin.x + y * self.axis.axisy.x
+            self.x = y * self.axis.axisy.y + self.axis.origin.y + x * self.axis.axisx.y
         # return the lenght of the vector
         self.lenght = math.hypot(self.x, self.y)
         # return true if the vector is horizontal
@@ -62,13 +67,22 @@ class vector2d:  # vector for 2d gestion of the position
         return self.t.t1 == -1 / self.t.t2
 
 
+class axis2d:
+    def __init__(self, origin = vector2d(), i = vector2d(1), j = vector2d(0, 1)):
+        self.origin = origin
+        self.axisx = i
+        self.axisy = j
+        self.is_orthonal = (self.axisx.y == 0) and (self.axisy.x == 0)
+        self.is_orthonormed = (self.axisx.x/self.axisy.y == 1) and self.is_orthonal
+
+
 class vector3d:  # vector for 3d gestion of the position
-    def __init__(self, x, y, z):
+    def __init__(self, x = 0, y = 0, z = 0):
         # +y : right ; -y : left, writable
         self.x = x
         # +x : up ; -x : down, writable
         self.y = y
-        # +z : near ; -x : far, writable
+        # +z : near ; -z : far, writable
         self.z = z
         # return the lenght of the vector
         self.lenght = math.hypot(math.hypot(self.x, self.y), self.z)
@@ -180,27 +194,52 @@ class trinome:
         return self.a * x * x + self.b * x + self.c
 
 
+def afine_to_trinom(a, b):
+    temp.t1 = a.a
+    temp.t2 = a.b
+    temp.t3 = b.a
+    temp.t4 = b.b
+    temp.t5 = temp.t1 * temp.t3
+    temp.t6 = temp.t1 * temp.t4 + temp.t2 * temp.t3
+    temp.t7 = temp.t2 * temp.t4
+    trinome(temp.t5, temp.t6, temp.t7)
+
+
 def sqrt(x):
     return math.pow(x, 0.5)
 
 
+def sqr(x):
+    return math.pow(x, 2)
 
-"""
-A = float(input())
-B = float(input())
-C = float(input())
-D = B * B - 4 * A * C
-print("Delta = " + str(D))
-L = -B / (2 * A)
-print("Alpha = " + str(L))
-T = -D / (4 * A)
-print("Beta = " + str(T))
-if D < 0:
-    print("Pas de solution")
-elif D == 0:
-    print("1 solution" + str(L))
-else:
-    Y = (-B - math.pow(D, 0.5))/(2 * A)
-    Z = (-B + math.pow(D, 0.5))/(2 * A)
-    print(str(Y) + str(X))
-"""
+
+def prompt(*args):
+    if args.__len__() == 1:
+        return input()
+    else:
+        rdict = {}
+        for i in args:
+            print("quelle valeur pour" + i)
+            rdict.__setitem__(input(), rdict.__len__() + 1)
+        return rdict
+
+
+class rect2d:
+    def __init__(self, pos = vector2d(0, 0), size = vector2d()):
+        self.pos = pos
+        self.size = size
+        self.surface = self.size.x * self.size.y
+        self.end = self.pos.__add__(self.size)
+        self.cover = {}
+        self.t = temp
+        for i in iter_float(self.pos.x, 1):
+            for a in iter_float(self.pos.y, 1):
+                self.cover.__setitem__(vector2d(i, a),-1)
+
+    def is_superposed(self, other):
+        self.t.t1 = False
+        for i in self.cover:
+            if other.cover.__contains__(i):
+                self.t.t1 = True
+        return self.t.t1
+

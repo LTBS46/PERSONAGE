@@ -262,6 +262,7 @@ class monperso:
         self.xp = 0
         self.PVMAX = self.CLASSE.PV.f(self.LVL) * self.RACE.PV
         self.PV = self.PVMAX
+        self.BACKPACK = SAC()
 
     def calculComp(self):
         print("gestion des compétance")
@@ -510,12 +511,18 @@ class EMPTYHAND:
         self.OK = False
 
 
+class SAC:
+    def __init__(self):
+        size = 0
+        wieght_max = PJ.ATTFOR
+        weight = 0
+
 def you_lose():
     print("you_lose")
     PJ.present()
     exit()
 
-
+"""
 OK1 = False
 to_print = "Classe ? : "
 for i in CLASSE.liststr:
@@ -592,3 +599,4 @@ while True:
             mob_list = new_list
         new_list = {}
         your_turn = True
+"""

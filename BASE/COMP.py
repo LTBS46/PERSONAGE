@@ -146,3 +146,28 @@ class ESQUIVE:
     def __init__(self):
         self.NAME = "Esquive"
         self.TYPE = "PASSIF"
+
+listfunc = {BOULEDENERGIE(),
+            BUFFDEF(),
+            BUFFATK(),
+            CONNAISSANCEDEFORET(),
+            COMPAGNON(),
+            CHEVAL(),
+            CURE(),
+            DRAINPV(),
+            DRAINMANA(),
+            ESQUIVE(),
+            GEL(),
+            HEAVYSLASH(),
+            LANCEFLAMME(),
+            MINIMUMDEX(),
+            MINIMUMFOR(),
+            MINIMUMEND(),
+            MINIMUMPER(),
+            MINIMUMSAG(),
+            POISON(),
+            PLUSDARMURE(),
+            PEAUDURE(),
+            PLUSGROSPLUSBIEN(),
+            RESURECITON(),
+            SOIN()}
