@@ -6,6 +6,23 @@ class temp:  # nul subclass for temporary value
         pass
 
 
+class f_afine:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        self.is_nul = self.a == 0 and self.b == 0
+        if self.is_nul:
+            self.cross_xv = math.inf
+        else:
+            if self.b == 0 or self.a == 0:
+                self.cross_xv = "Linéaire"
+            else:
+                self.cross_xv = self.b / self.a
+
+    def f(self, x):
+        return (self.a * x) + self.b
+
+
 class vector2d:  # vector for 2d gestion of the position
     def __init__(self, x = 0, y = 0, axis = None):
         self.axis = axis
@@ -27,7 +44,7 @@ class vector2d:  # vector for 2d gestion of the position
         self.isnul = self.x_isnul and self.y_isnul
         self.visual = "(" + str(self.x) + ";" + str(self.y) + ")"
         self.t = temp()
-        self.droite = f_afine(self.x / self.y, 0)
+        #self.droite = f_afine(self.x / self.y, 0)
         self.dict = {self.x, self.y}
 
     def __add__(self, other):
@@ -144,23 +161,6 @@ def iter_float(i, step):
         rdict.__setitem__(temp.t1, temp.t1)
         temp.t1 += step
     return rdict
-
-
-class f_afine:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-        self.is_nul = self.a == 0 and self.b == 0
-        if self.is_nul:
-            self.cross_xv = math.inf
-        else:
-            if self.b == 0 or self.a == 0:
-                self.cross_xv = "Linéaire"
-            else:
-                self.cross_xv = self.b / self.a
-
-    def f(self, x):
-        return (self.a * x) + self.b
 
 
 class trinome:

@@ -12,29 +12,31 @@
     <session id="-789657658">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="5" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="5" />
-          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.83" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitattributes" value="1" />
+          <entry key="html" value="1" />
           <entry key="py" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="41" />
         </counts>
@@ -42,13 +44,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="py" value="31176" />
+          <entry key="html" value="275" />
+          <entry key="py" value="31492" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="275" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="31176" />
+          <entry key="Python" value="31492" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -68,83 +72,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MAIN.py">
+        <entry file="file://$PROJECT_DIR$/prefab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="459" lean-forward="true" selection-start-line="459" selection-end-line="459" />
+            <state relative-caret-position="391">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="48" />
               <folding>
-                <element signature="e#188#16428#0" />
-                <element signature="e#235#437#0" />
-                <element signature="e#470#7266#0" />
-                <element signature="e#7311#7597#0" />
-                <element signature="e#7638#7716#0" />
-                <element signature="e#7747#7770#0" />
-                <element signature="e#7807#7882#0" />
-                <element signature="e#7914#8089#0" />
-                <element signature="e#8121#8339#0" />
-                <element signature="e#8376#8523#0" />
-                <element signature="e#8559#8773#0" />
-                <element signature="e#8779#9133#0" />
-                <element signature="e#9169#9455#0" />
-                <element signature="e#9492#10811#0" />
-                <element signature="e#9688#10248#0" />
-                <element signature="e#10115#10248#0" />
-                <element signature="e#10275#10811#0" />
-                <element signature="e#10320#10445#0" />
-                <element signature="e#10503#10628#0" />
-                <element signature="e#10686#10811#0" />
-                <element signature="e#10846#13148#0" />
-                <element signature="e#13184#16428#0" />
-                <element signature="e#16469#17290#0" />
-                <element signature="e#17313#17469#0" />
-                <element signature="e#17341#17469#0" />
-                <element signature="e#17493#17642#0" />
-                <element signature="e#17521#17642#0" />
-                <element signature="e#17690#17776#0" />
-                <element signature="e#17718#17776#0" />
-                <element signature="e#17665#17710#0" />
-                <element signature="e#17845#19476#1" />
-                <element signature="e#17845#18041#0" />
-                <element signature="e#18086#18412#0" />
+                <element signature="e#66#98#0" />
+                <marker date="1539605018204" expanded="false" signature="2276:2332" ph="..." />
+                <marker date="1539605018204" expanded="false" signature="5148:5153" ph="..." />
+                <marker date="1539605018204" expanded="true" signature="6391:6621" ph="..." />
+                <marker date="1539605018204" expanded="true" signature="6722:7565" ph="..." />
+                <marker date="1539605018204" expanded="true" signature="6966:6971" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prefab.py">
+        <entry file="file://$PROJECT_DIR$/DISP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-              <folding>
-                <element signature="e#66#98#0" />
-                <element signature="e#1097#1188#0" />
-                <element signature="e#1272#1537#0" />
-                <element signature="e#1669#1836#0" />
-                <element signature="e#1863#2030#0" />
-                <element signature="e#2078#2178#0" />
-                <element signature="e#2481#2788#0" />
-                <element signature="e#2242#3918#0" />
-                <element signature="e#3942#4078#0" />
-                <element signature="e#4110#4315#0" />
-                <element signature="e#4337#4735#0" />
-                <element signature="e#4538#4677#0" />
-                <element signature="e#4707#4735#0" />
-                <element signature="e#4757#5739#0" />
-                <element signature="e#5792#5837#0" />
-                <element signature="e#5759#5782#0" />
-                <element signature="e#5808#6031#0" />
-                <element signature="e#5873#6031#0" />
-                <element signature="e#6354#6447#0" />
-                <element signature="e#6414#6562#0" />
-                <marker date="1539333273016" expanded="true" signature="11:14" ph="..." />
-                <marker date="1539333273016" expanded="false" signature="1855:1911" ph="..." />
-                <marker date="1539333273016" expanded="false" signature="4727:4732" ph="..." />
-                <marker date="1539333273016" expanded="true" signature="6390:6620" ph="..." />
-                <marker date="1539333273016" expanded="false" signature="6674:6700" ph="..." />
-                <marker date="1539333273016" expanded="true" signature="6721:7564" ph="..." />
-                <marker date="1539333273016" expanded="true" signature="6965:6970" ph="..." />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -152,8 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DEVMAIN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state>
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -163,11 +110,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/superobject.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -240,6 +183,7 @@
       <list>
         <option value="Setup Script" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -272,9 +216,10 @@
         <option value="$PROJECT_DIR$/CLASSE.py" />
         <option value="$PROJECT_DIR$/BASE/ARME.py" />
         <option value="$PROJECT_DIR$/BASE/COMP.py" />
-        <option value="$PROJECT_DIR$/DEVMAIN.py" />
         <option value="$PROJECT_DIR$/MAIN.py" />
+        <option value="$PROJECT_DIR$/DEVMAIN.py" />
         <option value="$PROJECT_DIR$/prefab.py" />
+        <option value="$PROJECT_DIR$/DISP.html" />
       </list>
     </option>
   </component>
@@ -342,6 +287,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -676,6 +622,40 @@
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/MAIN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3706">
+          <caret line="459" selection-start-line="459" selection-end-line="459" />
+          <folding>
+            <element signature="e#235#437#0" />
+            <element signature="e#470#7266#0" />
+            <element signature="e#7311#7597#0" />
+            <element signature="e#7638#7716#0" />
+            <element signature="e#7747#7770#0" />
+            <element signature="e#7807#7882#0" />
+            <element signature="e#7914#8089#0" />
+            <element signature="e#8121#8339#0" />
+            <element signature="e#8376#8523#0" />
+            <element signature="e#8559#8773#0" />
+            <element signature="e#17690#17776#0" />
+            <element signature="e#17718#17776#0" />
+            <element signature="e#17845#19476#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DEVMAIN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/superobject.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/BASE/RACE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -727,98 +707,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DEVMAIN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/superobject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MAIN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="459" lean-forward="true" selection-start-line="459" selection-end-line="459" />
-          <folding>
-            <element signature="e#188#16428#0" />
-            <element signature="e#235#437#0" />
-            <element signature="e#470#7266#0" />
-            <element signature="e#7311#7597#0" />
-            <element signature="e#7638#7716#0" />
-            <element signature="e#7747#7770#0" />
-            <element signature="e#7807#7882#0" />
-            <element signature="e#7914#8089#0" />
-            <element signature="e#8121#8339#0" />
-            <element signature="e#8376#8523#0" />
-            <element signature="e#8559#8773#0" />
-            <element signature="e#8779#9133#0" />
-            <element signature="e#9169#9455#0" />
-            <element signature="e#9492#10811#0" />
-            <element signature="e#9688#10248#0" />
-            <element signature="e#10115#10248#0" />
-            <element signature="e#10275#10811#0" />
-            <element signature="e#10320#10445#0" />
-            <element signature="e#10503#10628#0" />
-            <element signature="e#10686#10811#0" />
-            <element signature="e#10846#13148#0" />
-            <element signature="e#13184#16428#0" />
-            <element signature="e#16469#17290#0" />
-            <element signature="e#17313#17469#0" />
-            <element signature="e#17341#17469#0" />
-            <element signature="e#17493#17642#0" />
-            <element signature="e#17521#17642#0" />
-            <element signature="e#17690#17776#0" />
-            <element signature="e#17718#17776#0" />
-            <element signature="e#17665#17710#0" />
-            <element signature="e#17845#19476#1" />
-            <element signature="e#17845#18041#0" />
-            <element signature="e#18086#18412#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prefab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="391">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="48" />
           <folding>
             <element signature="e#66#98#0" />
-            <element signature="e#1097#1188#0" />
-            <element signature="e#1272#1537#0" />
-            <element signature="e#1669#1836#0" />
-            <element signature="e#1863#2030#0" />
-            <element signature="e#2078#2178#0" />
-            <element signature="e#2481#2788#0" />
-            <element signature="e#2242#3918#0" />
-            <element signature="e#3942#4078#0" />
-            <element signature="e#4110#4315#0" />
-            <element signature="e#4337#4735#0" />
-            <element signature="e#4538#4677#0" />
-            <element signature="e#4707#4735#0" />
-            <element signature="e#4757#5739#0" />
-            <element signature="e#5792#5837#0" />
-            <element signature="e#5759#5782#0" />
-            <element signature="e#5808#6031#0" />
-            <element signature="e#5873#6031#0" />
-            <element signature="e#6354#6447#0" />
-            <element signature="e#6414#6562#0" />
-            <marker date="1539333273016" expanded="true" signature="11:14" ph="..." />
-            <marker date="1539333273016" expanded="false" signature="1855:1911" ph="..." />
-            <marker date="1539333273016" expanded="false" signature="4727:4732" ph="..." />
-            <marker date="1539333273016" expanded="true" signature="6390:6620" ph="..." />
-            <marker date="1539333273016" expanded="false" signature="6674:6700" ph="..." />
-            <marker date="1539333273016" expanded="true" signature="6721:7564" ph="..." />
-            <marker date="1539333273016" expanded="true" signature="6965:6970" ph="..." />
+            <marker date="1539605018204" expanded="false" signature="2276:2332" ph="..." />
+            <marker date="1539605018204" expanded="false" signature="5148:5153" ph="..." />
+            <marker date="1539605018204" expanded="true" signature="6391:6621" ph="..." />
+            <marker date="1539605018204" expanded="true" signature="6722:7565" ph="..." />
+            <marker date="1539605018204" expanded="true" signature="6966:6971" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DISP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
         </state>
       </provider>
     </entry>
