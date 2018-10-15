@@ -1,0 +1,64 @@
+body
+{
+    color: #FFFFFF;
+    background-image: url("ada.png");
+    background-attachment: fixed
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+p
+{
+    font-size: 14px;
+    font-family: consolas, sans-serif;
+    font-align: justify;
+}
+
+h1
+{
+    color: red;
+    font-size: 40px;
+    font-family: consolas, sans-serif;
+    text-align: center;
+}
+
+h2
+{
+    font-family: consolas, sans-serif;
+}
+
+h3
+{
+    font-family: consolas, sans-serif;
+}
+
+h4
+{
+    font-family: consolas, sans-serif;
+}
+
+h5
+{
+    font-family: consolas, sans-serif;
+}
+
+h6
+{
+    font-family: consolas, sans-serif;
+}
+
+em
+{
+    font-style: normal;
+}
+
+.intro
+{
+    color: #0000FF;
+    font-family: consolas, sans-serif;
+}
+
+.ita
+{
+    font-style: italic;
+}
