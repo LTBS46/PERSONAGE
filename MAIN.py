@@ -19,7 +19,7 @@ class monperso:
 
     def present(self):
         print("|--------------------------------------|")
-        if self.SUB == "nul":
+        if self.SUB.TYPE == "nul":
             self.to_print = "|Classe : " + self.CLASSE.CLASSE
             if not self.CLASSE.CLASSE == "Chevalier":
                 if (self.CLASSE.CLASSE == "Rodeur") or (self.CLASSE.CLASSE == "Prêtre"):
@@ -262,7 +262,7 @@ class monperso:
         self.xp = 0
         self.PVMAX = self.CLASSE.PV.f(self.LVL) * self.RACE.PV
         self.PV = self.PVMAX
-        self.BACKPACK = SAC()
+        # self.BACKPACK = SAC()
 
     def calculComp(self):
         print("gestion des compétance")
@@ -510,23 +510,24 @@ class EMPTYHAND:
         self.MAGIC = False
         self.OK = False
 
-
+"""
 class SAC:
     def __init__(self):
         size = 0
         wieght_max = PJ.ATTFOR
         weight = 0
+"""
 
 def you_lose():
     print("you_lose")
     PJ.present()
     exit()
 
-"""
+
 OK1 = False
 to_print = "Classe ? : "
 for i in CLASSE.liststr:
-    to_print = to_print + i + ", "
+    to_print += i + ", "
 print(to_print)
 while not OK1:
     sub = M.nomag()
@@ -539,7 +540,7 @@ while not OK1:
     if not OK1:
         print("huh?")
 print("OK")
-if classe.CLASSE == "MAGE":
+if classe.CLASSE == "mage":
     to_print = "Type ? : "
     for s in M.liststr:
         to_print += s + ", "
@@ -599,4 +600,3 @@ while True:
             mob_list = new_list
         new_list = {}
         your_turn = True
-"""

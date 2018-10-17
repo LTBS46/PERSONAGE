@@ -1,9 +1,17 @@
 body
 {
+    border-left: 2px #000000 dashed;
+    border-right: 2px #000000 dashed;
+    border-bottom: 2px #000000 dashed;
     color: #FFFFFF;
     background-color: #AAAAAA;
     margin-block-end: 0px;
+    margin-block-left: 0px;
     margin-block-start: 0px;
+    margin-block-right: 0px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 1px #000000;
+    text-shadow: 1px 1px 1px #FFFFFF;
 }
 
 p
@@ -149,4 +157,24 @@ strong
     margin-block-end: 0px;
     margin-block-start: 0px;
     font-style: normal;
+}
+
+a:hover
+{
+    color: #3300FF;
+}
+
+a:active
+{
+    color: #123456;
+}
+
+a:focus
+{
+    color: #ABCDEF;
+}
+
+a:visited
+{
+    color: #777777;
 }

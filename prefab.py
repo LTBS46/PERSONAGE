@@ -24,16 +24,11 @@ class f_afine:
 
 
 class vector2d:  # vector for 2d gestion of the position
-    def __init__(self, x = 0, y = 0, axis = None):
-        self.axis = axis
-        if self.axis == None:
-            # +y : right ; -y : left, writable
-            self.x = x
-            # +x : up ; -x : down, writable
-            self.y = y
-        else:
-            self.x = x * self.axis.axisx.x + self.axis.origin.x + y * self.axis.axisy.x
-            self.x = y * self.axis.axisy.y + self.axis.origin.y + x * self.axis.axisx.y
+    def __init__(self, x = 0, y = 0):
+        # +y : right ; -y : left, writable
+        self.x = x
+        # +x : up ; -x : down, writable
+        self.y = y
         # return the lenght of the vector
         self.lenght = math.hypot(self.x, self.y)
         # return true if the vector is horizontal
