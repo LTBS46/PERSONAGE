@@ -1,8 +1,8 @@
-import MOB
 import math
-from BASE import ARME as A, CLASSE, MAGE_TYPE as M, RACE as R
+from Py.BASE import CLASSE, ARME as A, MAGE_TYPE as M, RACE as R
 import random as rng
-import prefab as p
+from Py import prefab as p, MOB
+
 vec1 = p.vector2d(2,3)
 vec1.add_lenght(3)
 

@@ -1,5 +1,5 @@
-from BASE import COMP
-import prefab as p
+from Py.BASE import COMP
+from Py import prefab as p
 
 
 class CHASSEUR:

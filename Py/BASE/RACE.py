@@ -1,6 +1,3 @@
-import prefab as p
-
-
 class ELF:
     def __init__(self):
         self.RACE = "Elf"

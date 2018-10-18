@@ -12,6 +12,8 @@ body
     border-radius: 10px;
     box-shadow: 6px 6px 1px #000000;
     text-shadow: 1px 1px 1px #FFFFFF;
+    overflow: auto;
+    word-wrap: break-word;
 }
 
 p
@@ -177,4 +179,39 @@ a:focus
 a:visited
 {
     color: #777777;
+}
+
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.element3
+{
+    margin: auto;
+    background-color: #FF00FF;
+}
+
+.element2
+{
+    margin: auto;
+    background-color: #FF0000;
+}
+
+.element2:nth-child(2)
+{
+    background-color: #0000FF;
+    align-self: flex-end;
+    margin: auto;
+    flex: 1;
+}
+
+.element1
+{
+    background-color: #00FF00;
+    margin: auto;
 }

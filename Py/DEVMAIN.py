@@ -1,11 +1,5 @@
-import prefab
-from BASE import CLASSE
-from BASE import RACE
-from BASE import ARME
-from BASE import MAGE_TYPE
-from BASE import COMP
-import superobject
-
+from Py.BASE import CLASSE, ARME, MAGE_TYPE, COMP, RACE
+from Py import superobject, prefab
 
 SPOB = superobject.a()
 t = prefab.temp
