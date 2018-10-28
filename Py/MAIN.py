@@ -3,8 +3,6 @@ from Py.BASE import CLASSE, ARME as A, MAGE_TYPE as M, RACE as R
 import random as rng
 from Py import prefab as p, MOB
 
-vec1 = p.vector2d(2,3)
-vec1.add_lenght(3)
 
 class monperso:
     def __init__(self, classe, race, sub):
@@ -255,6 +253,7 @@ class monperso:
         self.calculARMOR()
         self.calculATT()
         self.calculWEAP()
+        self.present()
 
     def calculBase(self):
         print("calcul des basique")
@@ -510,6 +509,7 @@ class EMPTYHAND:
         self.MAGIC = False
         self.OK = False
 
+
 """
 class SAC:
     def __init__(self):
@@ -517,6 +517,7 @@ class SAC:
         wieght_max = PJ.ATTFOR
         weight = 0
 """
+
 
 def you_lose():
     print("you_lose")
@@ -570,7 +571,6 @@ while not OK2:
         print("huh?")
 print("OK")
 PJ = monperso(classe, race, sub)
-PJ.present()
 mob = MOB.MOB(PJ)
 Turn = 0
 your_turn = True
@@ -578,14 +578,15 @@ mob.new()
 ally_list = {}
 mob_list = {}
 new_list = {}
-while True:
+close = False
+while not close:
     if PJ.PV <= 0:
         you_lose()
     if mob.PV <= 0:
         mob.die()
     print("?")
     if your_turn:
-        interpret(input())
+        interpret(input(), your_turn)
     else:
         mob.attack()
         if your_turn:
