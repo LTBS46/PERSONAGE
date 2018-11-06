@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+    <component name="Base">
+        <entry key="" value=""/>
+        <option>
+            <list>
+                <TabState>
+                    <option/>
+                    <tap>
+                        <model>
+                            <persistance/>
+                            <language>
+                                <devkit/>
+                            </language>
+                            <import />
+                            <registery>
+
+                            </registery>
+                        </model>
+                    </tap>
+                </TabState>
+            </list>
+        </option>
+    </component>
+    <component name="Attribute">
+    </component>
+    <component>
+    </component>
+</project>
