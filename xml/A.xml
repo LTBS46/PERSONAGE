@@ -1,29 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-    <component name="Base">
-        <entry key="" value=""/>
-        <option>
-            <list>
-                <TabState>
-                    <option/>
-                    <tap>
-                        <model>
-                            <persistance/>
-                            <language>
-                                <devkit/>
-                            </language>
-                            <import />
-                            <registery>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Fiche SYSTEM "A.dtd">
+<Fiche>
+    <Info>
+        <Phy>
+            <Age>20</Age>
+            <Sexe>M</Sexe>
+            <Race>Humain</Race>
+        </Phy>
+        <Psy>
+            <Nom>Delabellecourt</Nom>
+            <Prenom>Jean-Jonny</Prenom>
+        </Psy>
+        <Socio>
+            <Professionel>
+                <Diplomes>
+                    <Diplome Bacplus="0">STMG</Diplome>
+                </Diplomes>
+                <Metier>Présentateur T.V.</Metier>
+            </Professionel>
+            <Date_De_Naissance>
+                <Jour>3</Jour>
+                <Mois nb="9">septembre</Mois>
+                <An>1996</An>
+            </Date_De_Naissance>
+        </Socio>
+    </Info>
+    <Stat>
+        <Attribut>
+            <Base>
+                <Force>12</Force>
+                <Dexterite>12</Dexterite>
+                <Sagacite>18</Sagacite>
+                <Endurence>12</Endurence>
+                <Perception>12</Perception>
+            </Base>
+            <Modificateur>
+                <Force>2</Force>
+                <Dexterite>2</Dexterite>
+                <Sagacite>2</Sagacite>
+                <Endurence>2</Endurence>
+                <Perception>2</Perception>
+            </Modificateur>
+        </Attribut>
+    </Stat>
+    <Equipement>
+        <Armes>
+            <Arme n="0">
 
-                            </registery>
-                        </model>
-                    </tap>
-                </TabState>
-            </list>
-        </option>
-    </component>
-    <component name="Attribute">
-    </component>
-    <component>
-    </component>
-</project>
+            </Arme>
+        </Armes>
+        <Armure>
+
+        </Armure>
+        <Objet>
+
+        </Objet>
+    </Equipement>
+</Fiche>

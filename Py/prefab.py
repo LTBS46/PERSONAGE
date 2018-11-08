@@ -23,6 +23,10 @@ class f_afine:
         return (self.a * x) + self.b
 
 
+def intersectdroite(afine1, afine2):
+    return vector2d((afine1.b - afine2.b)/(afine1.a + afine2.a), afine1.f((afine1.b - afine2.b)/(afine1.a + afine2.a)))
+
+
 class vector2d:  # vector for 2d gestion of the position
     def __init__(self, x = 0, y = 0):
         # +y : right ; -y : left, writable
@@ -237,4 +241,3 @@ class rect2d:
             if other.cover.__contains__(i):
                 self.t.t1 = True
         return self.t.t1
-

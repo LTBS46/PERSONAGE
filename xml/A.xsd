@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xsi:noNamespaceSchemaLocation="A.xsd">
+    <xsd:element name="nom" type="xsd:string" default="robert"/>
+    <xsd:element name="prenom" type="xsd:string" />
+    <xsd:element name="age" type="xsd:int" />
+</xsd:schema>

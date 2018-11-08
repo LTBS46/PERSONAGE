@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Fiche SYSTEM "A.dtd">
+
+<Fiche>
+    <Info>
+        <Phy>
+            <Age>1</Age>
+            <Sexe>M</Sexe>
+            <Race>Humain</Race>
+        </Phy>
+        <Psy>
+            <Nom>A</Nom>
+            <Prenom>B</Prenom>
+        </Psy>
+        <Socio>
+            <Date_De_Naissance>
+                <Jour>1</Jour>
+                <Mois nb="1">Janvier</Mois>
+                <An>1</An>
+            </Date_De_Naissance>
+            <Professionel>
+                <Diplomes>
+
+                </Diplomes>
+            </Professionel>
+        </Socio>
+    </Info>
+    <Stat>
+        <Attribut>
+            <Base>
+                <Force>1</Force>
+                <Dexterite>1</Dexterite>
+                <Sagacite>1</Sagacite>
+                <Endurence>1</Endurence>
+                <Perception>1</Perception>
+            </Base>
+            <Modificateur>
+                <Force>1</Force>
+                <Dexterite>1</Dexterite>
+                <Sagacite>1</Sagacite>
+                <Endurence>1</Endurence>
+                <Perception>1</Perception>
+            </Modificateur>
+        </Attribut>
+    </Stat>
+    <Equipement>
+        <Armes>
+
+        </Armes>
+        <Armure>
+
+        </Armure>
+        <Objet>
+
+        </Objet>
+    </Equipement>
+</Fiche>

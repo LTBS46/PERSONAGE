@@ -1,0 +1,38 @@
+<!ELEMENT Fiche (Info, Stat, Equipement)>
+    <!ELEMENT Info (Phy, Psy, Socio)>
+        <!ELEMENT Phy (Age, Sexe, Race)
+            <!ELEMENT Age (#PCDATA)>
+            <!ELEMENT Sexe (#PCDATA)>
+            <!ELEMENT Race (#PCDATA)>
+        <!ELEMENT Psy (Nom, Prenom, Religion?)>
+            <!ELEMENT Nom (#PCDATA)>
+            <!ELEMENT Prenom (#PCDATA)>
+            <!ELEMENT Religion (#PCDATA)>
+        <!ELEMENT Socio (Date_De_Naissance, Professionel)>
+            <!ELEMENT Date_De_Naissance (Jour, Mois, An)>
+                <!ELEMENT Jour (#PCDATA)>
+                <!ELEMENT Mois (#PCDATA)>
+                    <!ATTLIST Mois nb (1|2|3|4|5|6|7|8|9|10|11|12) mode>
+                <!ELEMENT An (#PCDATA)>
+            <!ELEMENT Professionel (Diplomes,Metier*, Allegence*)>
+                <!ELEMENT Metier (#PCDATA)>
+                <!ELEMENT Allegence (Grade)>
+                    <!ELEMENT Grade (#PCDATA)>
+                <!ELEMENT Diplomes (Diplome*)>
+                    <!ELEMENT Diplome (#PCDATA)>
+                        <!ATTLIST Diplome Bacplus (-3|-2|-1|0|1|2|3|4|5|6|7|8|9|10|11) mode>
+    <!ELEMENT Stat (Attribut)>
+        <!ELEMENT Attribut (Base, Modificateur)>
+            <!ELEMENT Base (Force, Dexterite, Sagacite, Endurence, Perception)>
+                <!ELEMENT Force (#PCDATA)>
+                <!ELEMENT Dexterite (#PCDATA)>
+                <!ELEMENT Sagacite (#PCDATA)>
+                <!ELEMENT Endurence (#PCDATA)>
+                <!ELEMENT Perception (#PCDATA)>
+            <!ELEMENT Modificateur (Force, Dexterite, Sagacite, Endurence, Perception)>
+    <!ELEMENT Equipement (Armes, Armure, Objet)>
+        <!ELEMENT Armes (Arme*)>
+            <!ELEMENT Arme (EMPTY)>
+                <!ATTLIST Arme n CDATA ID "0" mode>
+        <!ELEMENT Armure (EMPTY)>
+        <!ELEMENT Objet (EMPTY)>
