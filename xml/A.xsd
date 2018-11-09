@@ -1,7 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xsi:noNamespaceSchemaLocation="A.xsd">
-    <xsd:element name="nom" type="xsd:string" default="robert"/>
-    <xsd:element name="prenom" type="xsd:string" />
-    <xsd:element name="age" type="xsd:int" />
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Fiche">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Information">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Physique">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Age" type="xsd:unsignedByte">
+                                        </xsd:element>
+                                        <xsd:element name="Sexe" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="Race" type="xsd:string">
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="Psychologique">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Nom" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="Prenom" type="xsd:string">
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="Social">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Professionnel">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Diplomes">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="Diplome" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xsd:complexType>
+                                                                        <xsd:sequence>
+                                                                            <xsd:element name="Nom" type="xsd:string">
+                                                                            </xsd:element>
+                                                                            <xsd:element name="Bacplus" type="xsd:byte">
+                                                                            </xsd:element>
+                                                                        </xsd:sequence>
+                                                                    </xsd:complexType>
+                                                                </xsd:element>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Métier" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="Date_De_Naissance">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Jour" type="xsd:gYear">
+                                                    </xsd:element>
+                                                    <xsd:element name="Mois" type="xsd:gMonth">
+                                                    </xsd:element>
+                                                    <xsd:element name="An" type="xsd:gYear">
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Statistique">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Attribut">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Base">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Force">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="6">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="18">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Dextérité">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="6">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="18">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Sagacité">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="6">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="18">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Endurence">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="6">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="18">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Percéption">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="6">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="18">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="Modificateur">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Force">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="1">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="6">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Dextérité">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="1">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="6">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Sagacité">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="1">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="6">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Endurence">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="1">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="6">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                    <xsd:element name="Percéption">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:unsignedByte">
+                                                                <xsd:minInclusive value="1">
+                                                                </xsd:minInclusive>
+                                                                <xsd:maxInclusive value="6">
+                                                                </xsd:maxInclusive>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Equipement">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Armes">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Arme">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Nom" type="xsd:string">
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="Armure">
+
+                            </xsd:element>
+                            <xsd:element name="Objet">
+
+                            </xsd:element>
+                            <xsd:element name="Argent">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Devise" maxOccurs="unbounded" minOccurs="0">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Compte" minOccurs="0" maxOccurs="unbounded">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="Argent" type="xsd:integer">
+                                                                </xsd:element>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
 </xsd:schema>

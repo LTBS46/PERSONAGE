@@ -1,57 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Fiche SYSTEM "A.dtd">
-
+<!DOCTYPE Fiche SYSTEM "A.xsd">
 <Fiche>
-    <Info>
-        <Phy>
-            <Age>1</Age>
-            <Sexe>M</Sexe>
-            <Race>Humain</Race>
-        </Phy>
-        <Psy>
-            <Nom>A</Nom>
-            <Prenom>B</Prenom>
-        </Psy>
-        <Socio>
+    <Information>
+        <Physique>
+            <&#194;ge></&#194;ge>
+            <Sexe></Sexe>
+            <Race></Race>
+        </Physique>
+        <Psychologique>
+            <Nom></Nom>
+            <Prenom></Prenom>
+        </Psychologique>
+        <Social>
+            <Professionnel>
+                <Dipl&#244;mes></Dipl&#244;mes>
+            </Professionnel>
             <Date_De_Naissance>
-                <Jour>1</Jour>
-                <Mois nb="1">Janvier</Mois>
-                <An>1</An>
+                <Jour></Jour>
+                <Mois></Mois>
+                <An></An>
             </Date_De_Naissance>
-            <Professionel>
-                <Diplomes>
-
-                </Diplomes>
-            </Professionel>
-        </Socio>
-    </Info>
-    <Stat>
+        </Social>
+    </Information>
+    <Statistique>
         <Attribut>
             <Base>
-                <Force>1</Force>
-                <Dexterite>1</Dexterite>
-                <Sagacite>1</Sagacite>
-                <Endurence>1</Endurence>
-                <Perception>1</Perception>
+                <Force></Force>
+                <Dext&#233;rit&#233;></Dext&#233;rit&#233;>
+                <Sagacit&#233;></Sagacit&#233;>
+                <Endurence></Endurence>
+                <Perc&#233;ption></Perc&#233;ption>
             </Base>
             <Modificateur>
-                <Force>1</Force>
-                <Dexterite>1</Dexterite>
-                <Sagacite>1</Sagacite>
-                <Endurence>1</Endurence>
-                <Perception>1</Perception>
+                <Force></Force>
+                <Dext&#233;rit&#233;></Dext&#233;rit&#233;>
+                <Sagacit&#233;></Sagacit&#233;>
+                <Endurence></Endurence>
+                <Perc&#233;ption></Perc&#233;ption>
             </Modificateur>
         </Attribut>
-    </Stat>
+    </Statistique>
     <Equipement>
         <Armes>
-
+            <Arme></Arme>
         </Armes>
-        <Armure>
-
-        </Armure>
-        <Objet>
-
-        </Objet>
+        <Armure></Armure>
+        <Objet></Objet>
+        <Argent></Argent>
     </Equipement>
 </Fiche>

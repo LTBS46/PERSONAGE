@@ -1,52 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Fiche SYSTEM "A.dtd">
+<?xml version="1.0" encoding="I" standalone="no"?>
+<!DOCTYPE Fiche SYSTEM "A.xsd">
 <Fiche>
-    <Info>
-        <Phy>
+    <Information>
+        <Physique>
             <Age>20</Age>
             <Sexe>M</Sexe>
             <Race>Humain</Race>
-        </Phy>
-        <Psy>
+        </Physique>
+        <Psychologique>
             <Nom>Delabellecourt</Nom>
             <Prenom>Jean-Jonny</Prenom>
-        </Psy>
-        <Socio>
-            <Professionel>
+        </Psychologique>
+        <Social>
+            <Professionnel>
                 <Diplomes>
-                    <Diplome Bacplus="0">STMG</Diplome>
+                    <Diplome>
+                        <Nom>STMG</Nom>
+                        <Bacplus>0</Bacplus>
+                    </Diplome>
                 </Diplomes>
-                <Metier>Présentateur T.V.</Metier>
-            </Professionel>
+                <Métier>Présentateur T.V.</Métier>
+            </Professionnel>
             <Date_De_Naissance>
                 <Jour>3</Jour>
-                <Mois nb="9">septembre</Mois>
+                <Mois>Septembre</Mois>
                 <An>1996</An>
             </Date_De_Naissance>
-        </Socio>
-    </Info>
-    <Stat>
+        </Social>
+    </Information>
+    <Statistique>
         <Attribut>
             <Base>
                 <Force>12</Force>
-                <Dexterite>12</Dexterite>
-                <Sagacite>18</Sagacite>
+                <Dextérité>12</Dextérité>
+                <Sagacité>18</Sagacité>
                 <Endurence>12</Endurence>
-                <Perception>12</Perception>
+                <Percéption>12</Percéption>
             </Base>
             <Modificateur>
                 <Force>2</Force>
-                <Dexterite>2</Dexterite>
-                <Sagacite>2</Sagacite>
+                <Dextérité>2</Dextérité>
+                <Sagacité>2</Sagacité>
                 <Endurence>2</Endurence>
-                <Perception>2</Perception>
+                <Percéption>2</Percéption>
             </Modificateur>
         </Attribut>
-    </Stat>
+    </Statistique>
     <Equipement>
         <Armes>
-            <Arme n="0">
-
+            <Arme>
+                <Nom>Epée</Nom>
             </Arme>
         </Armes>
         <Armure>
