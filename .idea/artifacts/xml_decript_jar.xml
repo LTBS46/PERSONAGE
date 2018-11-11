@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xml decript:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/xml_decript_jar</output-path>
+    <root id="archive" name="xml decript.jar">
+      <element id="module-output" name="xml decript" />
+    </root>
+  </artifact>
+</component>

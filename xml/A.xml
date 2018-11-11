@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="I" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Fiche SYSTEM "A.xsd">
 <Fiche>
     <Information>
@@ -19,7 +19,7 @@
                         <Bacplus>0</Bacplus>
                     </Diplome>
                 </Diplomes>
-                <Métier>Présentateur T.V.</Métier>
+                <Metier>Présentateur T.V.</Metier>
             </Professionnel>
             <Date_De_Naissance>
                 <Jour>3</Jour>
@@ -32,23 +32,23 @@
         <Attribut>
             <Base>
                 <Force>12</Force>
-                <Dextérité>12</Dextérité>
-                <Sagacité>18</Sagacité>
+                <Dexterite>12</Dexterite>
+                <Sagacite>18</Sagacite>
                 <Endurence>12</Endurence>
-                <Percéption>12</Percéption>
+                <Perception>12</Perception>
             </Base>
             <Modificateur>
                 <Force>2</Force>
-                <Dextérité>2</Dextérité>
-                <Sagacité>2</Sagacité>
+                <Dexterite>2</Dexterite>
+                <Sagacite>2</Sagacite>
                 <Endurence>2</Endurence>
-                <Percéption>2</Percéption>
+                <Perception>2</Perception>
             </Modificateur>
         </Attribut>
     </Statistique>
     <Equipement>
         <Armes>
-            <Arme>
+            <Arme numero="0">
                 <Nom>Epée</Nom>
             </Arme>
         </Armes>
