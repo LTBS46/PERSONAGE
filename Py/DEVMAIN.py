@@ -1,6 +1,6 @@
-from Py.BASE import CLASSE, ARME, MAGE_TYPE, COMP, RACE
-from Py import superobject, prefab
-
+#from Py.BASE import CLASSE, ARME, MAGE_TYPE, COMP, RACE
+#from Py import superobject, prefab
+"""
 SPOB = superobject.a()
 t = prefab.temp
 for i in CLASSE.listfunc:
@@ -22,3 +22,7 @@ for i in RACE.listfunc:
 for i in COMP.listfunc:
     t.t1 = i
     print(i.NAME)
+"""
+a = []
+for i in range(int(input())):
+    a.

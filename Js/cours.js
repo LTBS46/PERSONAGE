@@ -1,6 +1,3 @@
-var 
-
-
 
 function getlast(chain) {
 	return chain[chain.lenght - 1]

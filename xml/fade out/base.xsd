@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Fiche" default="Fiche">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Info">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Fate_Token" type="xsd:byte">
+
+                            </xsd:element>
+                            <xsd:element name="Aspect">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Principal" type="xsd:string"></xsd:element>
+                                        <xsd:element name="Secondaire" minOccurs="4" maxOccurs="4" type="xsd:string"></xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Talents" default="Talent :">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Moyen" minOccurs="4" maxOccurs="6" type="xsd:string"></xsd:element>
+                            <xsd:element name="Passable" minOccurs="3" maxOccurs="6" type="xsd:string"></xsd:element>
+                            <xsd:element name="Bon" minOccurs="2" maxOccurs="6" type="xsd:string"></xsd:element>
+                            <xsd:element name="Excellent" maxOccurs="6" type="xsd:string"></xsd:element>
+                            <xsd:element name="Formidable" minOccurs="0" maxOccurs="6" type="xsd:string"></xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Prouesse">
+
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

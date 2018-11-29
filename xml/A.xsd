@@ -141,9 +141,9 @@
                                                     <xsd:element name="Force">
                                                         <xsd:simpleType>
                                                             <xsd:restriction base="xsd:unsignedByte">
-                                                                <xsd:minInclusive value="1">
+                                                                <xsd:minInclusive value="2">
                                                                 </xsd:minInclusive>
-                                                                <xsd:maxInclusive value="6">
+                                                                <xsd:maxInclusive value="8">
                                                                 </xsd:maxInclusive>
                                                             </xsd:restriction>
                                                         </xsd:simpleType>
@@ -151,9 +151,9 @@
                                                     <xsd:element name="Dexterite">
                                                         <xsd:simpleType>
                                                             <xsd:restriction base="xsd:unsignedByte">
-                                                                <xsd:minInclusive value="1">
+                                                                <xsd:minInclusive value="2">
                                                                 </xsd:minInclusive>
-                                                                <xsd:maxInclusive value="6">
+                                                                <xsd:maxInclusive value="8">
                                                                 </xsd:maxInclusive>
                                                             </xsd:restriction>
                                                         </xsd:simpleType>
@@ -161,9 +161,9 @@
                                                     <xsd:element name="Sagacite">
                                                         <xsd:simpleType>
                                                             <xsd:restriction base="xsd:unsignedByte">
-                                                                <xsd:minInclusive value="1">
+                                                                <xsd:minInclusive value="2">
                                                                 </xsd:minInclusive>
-                                                                <xsd:maxInclusive value="6">
+                                                                <xsd:maxInclusive value="8">
                                                                 </xsd:maxInclusive>
                                                             </xsd:restriction>
                                                         </xsd:simpleType>
@@ -171,9 +171,9 @@
                                                     <xsd:element name="Endurence">
                                                         <xsd:simpleType>
                                                             <xsd:restriction base="xsd:unsignedByte">
-                                                                <xsd:minInclusive value="1">
+                                                                <xsd:minInclusive value="2">
                                                                 </xsd:minInclusive>
-                                                                <xsd:maxInclusive value="6">
+                                                                <xsd:maxInclusive value="8">
                                                                 </xsd:maxInclusive>
                                                             </xsd:restriction>
                                                         </xsd:simpleType>
@@ -181,9 +181,9 @@
                                                     <xsd:element name="Perception">
                                                         <xsd:simpleType>
                                                             <xsd:restriction base="xsd:unsignedByte">
-                                                                <xsd:minInclusive value="1">
+                                                                <xsd:minInclusive value="2">
                                                                 </xsd:minInclusive>
-                                                                <xsd:maxInclusive value="6">
+                                                                <xsd:maxInclusive value="8">
                                                                 </xsd:maxInclusive>
                                                             </xsd:restriction>
                                                         </xsd:simpleType>

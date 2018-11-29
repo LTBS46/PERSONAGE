@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Fiche">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="En-tete">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Info">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Nom" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="Prenom" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="Race" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="Classe" type="xsd:string">
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="Statistique">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Principale">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Mana">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="Mana_actuel" type="xsd:unsignedByte">
+                                                                </xsd:element>
+                                                                <xsd:element name="Mana_max" type="xsd:unsignedByte">
+                                                                </xsd:element>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element name="PV">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element name="PV_actuel" type="xsd:unsignedByte">
+                                                                </xsd:element>
+                                                                <xsd:element name="PV_max" type="xsd:unsignedByte">
+                                                                </xsd:element>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="Caractéristique">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Force"></xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

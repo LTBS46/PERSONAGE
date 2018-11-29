@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="base.css" type="text/css"?>
+<!DOCTYPE Fiche SYSTEM "base.xsd">
+<Fiche>
+    <Info>
+        <Fate_Token>3</Fate_Token>
+        <Aspect>
+            <Principal>Peur des rat</Principal>
+            <Secondaire>Aime les pâte</Secondaire>
+        </Aspect>
+    </Info>
+    <Talents>
+        <Moyen>Volonte</Moyen>
+        <Moyen>Ressource</Moyen>
+        <Moyen>Discretion</Moyen>
+        <Moyen>Athletisme</Moyen>
+        <Passable>Tir</Passable>
+        <Passable>Empathie</Passable>
+        <Passable>Physique</Passable>
+        <Bon>Conduite</Bon>
+        <Bon>Erudition</Bon>
+        <Excellent>Observation</Excellent>
+    </Talents>
+    <Prouesse>Saut périleux arière vrillé</Prouesse>
+</Fiche>

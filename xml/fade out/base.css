@@ -1,0 +1,44 @@
+Fiche
+{
+    display: block;
+    width: 250px;
+    font-size: 16pt;
+    font-family: consolas ;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    border: 2px #000000 noraml;
+}
+Info
+{
+    border: 2px #000000 dashed;
+    display: block;
+    font-size: 12pt;
+    padding-left: 10px;
+}
+
+Talents
+{
+    column-count: 5;
+    column-width: 200px;
+    display: block;
+    font-size: 12pt;
+    color: red ;
+    font-weight: bold;
+    padding-left: 10px;
+    border: 2px #000000 dashed;
+}
+
+Prouesse
+{
+    display: block;
+    font-size: 11pt ;
+    font-style: italic;
+    padding-left: 10px;
+    border: 2px #000000 dashed;
+}
+Moyen, Passable, Bon, Excellent
+{
+    display: block;
+}

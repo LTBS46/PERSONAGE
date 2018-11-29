@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Fiche SYSTEM "fichep.xsd">
+<Fiche>
+    <En-tete>
+        <Info>
+            <Nom></Nom>
+            <Prenom></Prenom>
+            <Race></Race>
+            <Classe></Classe>
+        </Info>
+        <Statistique>
+            <Principale>
+                <Mana>
+                    <Mana_actuel></Mana_actuel>
+                    <Mana_max></Mana_max>
+                </Mana>
+                <PV>
+                    <PV_actuel></PV_actuel>
+                    <PV_max></PV_max>
+                </PV>
+            </Principale>
+            <Caractéristique>
+                <Force></Force>
+            </Caractéristique>
+        </Statistique>
+    </En-tete>
+</Fiche>
